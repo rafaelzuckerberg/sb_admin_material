@@ -4,7 +4,8 @@
     "scripts": {
         "ng": "ng",
         "start": "ng serve --progress",
-        "build": "ng build --prod",
+        "build": "ng build --prod --output-path=../public/angular --deploy-url angular/ --base-href=/",
+        "dev": "ng build --output-path=../public/angular --watch --deploy-url angular/",
         "gitbuild": "ng build --prod --base-href /start-javascript/sb-admin-material/master/dist/",
         "test": "ng test",
         "lint": "ng lint",

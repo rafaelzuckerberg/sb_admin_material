@@ -17,3 +17,32 @@ body {
 .mb-20 {
     margin-bottom: 20px;
 }
+
+
+// Begin custom buttom Fab
+button.mat-fab {
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+}
+// End custom buttom Fab
+
+
+mat-icon {
+    cursor: pointer;
+}
+
+
+// Begin custom text
+.text-success {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(8, 85, 8);
+}
+
+.text-danger {
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(136, 6, 6);
+}
+// End custom text

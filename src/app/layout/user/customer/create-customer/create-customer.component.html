@@ -1,0 +1,104 @@
+<h2 mat-dialog-title>{{ !canEdit ? 'Cadastrar' : 'Editar' }} Cliente</h2>
+
+<mat-dialog-content class="mat-typography">
+  
+  <form class="example-container" [formGroup]="form" (ngSubmit)="save()">
+
+    <div class="row">
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Nome" formControlName="nome">
+      </mat-form-field>
+
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Email" formControlName="email" [readonly]="canEdit">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="password" placeholder="Senha" formControlName="senha">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="CNPJ" formControlName="cnpj">
+      </mat-form-field> 
+    </div>
+   
+    <div class="row">
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Nome do responsável" formControlName="responsavel_nome">
+      </mat-form-field>
+
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Telefone do responsável" formControlName="responsavel_telefone">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Celular responsável" formControlName="responsavel_celular">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Email responsável" formControlName="responsavel_email">
+      </mat-form-field> 
+    </div>
+   
+    <div class="row">
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Nome do segundo responsável" formControlName="responsavel2_nome">
+      </mat-form-field>
+
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Telefone do segundo responsável" formControlName="responsavel2_telefone">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Celular do segundo responsável" formControlName="responsavel2_celular">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Email do segundo responsável" formControlName="responsavel2_email">
+      </mat-form-field> 
+    </div>
+   
+    
+    <div class="row">
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor cliente parecer" formControlName="valor_cliente_parecer">
+      </mat-form-field>
+
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor fornecedor parecer" formControlName="valor_fornecedor_parecer">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor cliente negociado" formControlName="valor_cliente_negociacao">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor proposto negociado" formControlName="valor_proposto_negociacao">
+      </mat-form-field> 
+    </div>
+
+
+    <div class="row">
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor negociado negociacao" formControlName="valor_negociado_negociacao">
+      </mat-form-field>
+
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Valor negociado C" formControlName="valor_negociadoC_negociacao">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Complemento" formControlName="complemento_endereco">
+      </mat-form-field> 
+      
+      <mat-form-field class="col lg-3">
+        <input matInput type="text" placeholder="Nº" formControlName="numero">
+      </mat-form-field> 
+    </div>
+
+   
+
+    <button mat-stroked-button color="primary" [disabled]="!form.valid || block">{{ !canEdit ? 'Cadastrar' : 'Editar' }}</button>
+   
+  </form>
+</mat-dialog-content> 

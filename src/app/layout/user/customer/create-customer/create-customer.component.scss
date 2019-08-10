@@ -1,0 +1,25 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container > * {
+    width: 100%;
+}
+
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+
+.row {
+  width: 100%;
+
+  .col.lg-3 {
+    // border: 1px solid gray;
+    width: 23.799%;
+    margin: 0.6%;
+  }
+}

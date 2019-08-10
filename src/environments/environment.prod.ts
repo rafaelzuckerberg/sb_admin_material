@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  api: 'https://testesytem.herokuapp.com/api/dashboard/'
 };

@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>{{ !canEdit ? 'Cadastrar' : 'Editar' }} Administrador</h2>
+
+<mat-dialog-content class="mat-typography">
+  
+  <form class="example-container" [formGroup]="form" (ngSubmit)="save()">
+    <mat-form-field>
+      <input matInput type="text" placeholder="Nome" formControlName="nome">
+    </mat-form-field>
+   
+    <mat-form-field>
+      <input matInput type="text" placeholder="Email" formControlName="email" [readonly]="canEdit">
+    </mat-form-field> 
+    
+    <mat-form-field>
+      <input matInput type="password" placeholder="Senha" formControlName="senha">
+    </mat-form-field> 
+
+    <button mat-stroked-button color="primary" [disabled]="!form.valid || block">{{ !canEdit ? 'Cadastrar' : 'Editar' }}</button>
+   
+  </form>
+</mat-dialog-content> 

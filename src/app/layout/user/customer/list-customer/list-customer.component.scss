@@ -1,0 +1,55 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+
+.mat-column-id {
+  width: 4%;
+  // border: 1px solid gray;
+}
+
+.mat-column-nome {
+  width: 25%;
+  // border: 1px solid gray;
+}
+
+.mat-column-email {
+  width: 23%;
+  // border: 1px solid gray;
+}
+
+.mat-column-cnpj {
+  width: 12%;
+  // border: 1px solid gray;
+}
+
+.mat-column-status {
+  width: 5%;
+  // border: 1px solid gray;
+}
+
+.mat-column-created_at {
+  width: 7%;
+  // border: 1px solid gray;
+}
+  
+.mat-column-icon {
+  width: 9%;
+  // border: 1px solid gray;
+}
+
+mat-icon {
+  margin-right: 3%;
+}
+
+
+  
